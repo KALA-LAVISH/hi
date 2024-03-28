@@ -1,0 +1,31 @@
+.filter_btn {
+  border: 1px solid var(--border_color);
+  background: none;
+  padding: 10px 38px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  font-weight: 500;
+}
+
+.filter_btn[aria-selected="true"],
+.filter_btn:hover {
+  border: 1px solid var(--primary);
+}
+
+.clear {
+  background: none;
+  padding: 0px 8px;
+  border-radius: 30px;
+  margin: 10px 2px;
+  position: absolute;
+  right: 8px;
+  bottom: 52px;
+  border: none;
+  font-weight: 500;
+}
+
+.clear:hover {
+  color: var(--primary);
+}

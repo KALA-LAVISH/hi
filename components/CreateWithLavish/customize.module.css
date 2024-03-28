@@ -1,0 +1,45 @@
+.row {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.card > div {
+  border: 1px solid var(--border_color);
+  padding: 4px;
+  margin-bottom: 5px;
+  width: 68px;
+  height: 68px;
+  transition: all 0.4s;
+}
+.card[aria-selected="true"] {
+  color: var(--primary);
+}
+.card[aria-selected="true"] > div {
+  border: 1px solid var(--primary);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.price > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  outline: 1px solid var(--border_color);
+}
+
+.price > div:last-child {
+  font-weight: 500;
+}
